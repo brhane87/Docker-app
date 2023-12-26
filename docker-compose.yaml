@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  myapp:
+    build: ./my-app
+    container_name: myapp_cont
+    ports:
+      - 3000:3000
+    volumes:
+      - ./my-app:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
