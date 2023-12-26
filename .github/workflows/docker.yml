@@ -9,5 +9,5 @@ jobs:
       - uses: actions/checkout@v3
       - name: docker build my app
         run: |
-         docker build ./myapp -t myapp:1.0.0
+         docker build ./my-app -t myapp:1.0.0
     
