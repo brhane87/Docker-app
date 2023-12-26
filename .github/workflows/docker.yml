@@ -15,8 +15,8 @@ jobs:
          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       - name: docker build my app
         run: |
-         docker build ./my-app -t myapp:1.0.0
+         docker build ./my-app -t brhane/myapp:1.0.0
       - name: docker push
         run: |
-          docker push myapp:1.0.0
+          docker push brhane/myapp:1.0.0
     
